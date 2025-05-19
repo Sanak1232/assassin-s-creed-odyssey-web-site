@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assassin's Creed Odyssey</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #111;
+      color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: #1a1a1a;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #222;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #ddd;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: auto;
+    }
+    aside {
+      background: #1e1e1e;
+      width: 200px;
+      padding: 20px;
+    }
+    aside a {
+      display: block;
+      color: #f9d342;
+      margin-bottom: 10px;
+      text-decoration: none;
+    }
+    aside a:hover {
+      text-decoration: underline;
+    }
+    main {
+      flex: 1;
+      padding: 30px;
+    }
+    h2 {
+      color: #f9d342;
+    }
+    ul {
+      list-style: circle;
+      margin-left: 20px;
+    }
+    footer {
+      background: #1a1a1a;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .gallery {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+    .main-image {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .main-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .thumbnails {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .thumbnails img {
+      width: 100%;
+      cursor: pointer;
+      border-radius: 5px;
+      border: 2px solid transparent;
+      transition: border-color 0.3s;
+    }
+    .thumbnails img:hover {
+      border-color: #f9d342;
+    }
+    .extra-thumbnail {
+      max-width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .extra-thumbnail:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Assassin's Creed Odyssey</h1>
+  </header>
+  <nav>
+    <a href="#overview">Обзор</a>
+    <a href="#features">Особенности</a>
+    <a href="#gallery">Галерея</a>
+    <a href="#requirements">Системные требования</a>
+    <a href="#trailer">Трейлер</a>
+    <a href="#story">История</a>
+  </nav>
+    <div class="container">
+    <aside>
+      <a href="characters.html">Персонажи</a>
+      <a href="#myths">Мифология</a>
+      <a href="extra.html">Дополнительная страница</a>
+    </aside>
+    <main>
+      <section id="overview">
+        <h2>Обзор</h2>
+        <p>Assassin's Creed Odyssey — это ролевая игра в открытом мире, действие которой происходит в Древней Греции. Игроки берут на себя роль наемника и исследуют богатый мир, принимая ключевые решения, влияющие на сюжет.</p>
+      </section>
+
+      <section id="features">
+        <h2>Особенности игры</h2>
+        <ul>
+          <li>Открытый мир с морскими сражениями и исследованием островов.</li>
+          <li>Возможность выбирать героя — Алексий или Кассандра.</li>
+          <li>Древнегреческие мифы и легенды вплетены в основной сюжет.</li>
+          <li>Система диалогов и последствий выбора.</li>
+          <li>Разнообразные концовки и сюжетные ветки.</li>
+          <li>Интерактивные битвы и развитие персонажа.</li>
+        </ul>
+      </section>
+
+      <section id="story">
+        <h2>Сюжет и история</h2>
+        <p>Игрок начинает своё приключение в роли спартанского наемника, изгнанного в детстве. Судьба приводит его к великим открытиям, конфликту с тайным орденом и даже к сражениям с мифическими чудовищами. Сюжет глубоко завязан на семейных отношениях, древней политике и поиске истины об истоках цивилизации.</p>
+      </section>
+
+      <section id="gallery">
+        <h2>Галерея</h2>
+        <div class="gallery">
+          <div class="main-image">
+            <img id="mainDisplay" src="images/1.jpg" alt="Главное изображение">
+            <img src="images/5.jpg" alt="Дополнительное" class="extra-thumbnail" onclick="showImage(this)">
+          </div>
+          <div class="thumbnails">
+            <img src="images/1.jpg" alt="Миниатюра 1" onclick="showImage(this)">
+            <img src="images/2.jpg" alt="Миниатюра 2" onclick="showImage(this)">
+            <img src="images/3.jpg" alt="Миниатюра 3" onclick="showImage(this)">
+            <img src="images/4.jpg" alt="Миниатюра 4" onclick="showImage(this)">
+            <img src="images/6.jpg" alt="Миниатюра 6" onclick="showImage(this)">
+          </div>
+        </div>
+      </section>
+
+      <section id="requirements">
+        <h2>Системные требования</h2>
+        <h3>Минимальные:</h3>
+        <ul>
+          <li>ОС: Windows 7 SP1, Windows 8.1, Windows 10 (64-разрядные)</li>
+          <li>Процессор: Intel Core i5 2400 / AMD FX 6300</li>
+          <li>Оперативная память: 8 ГБ</li>
+          <li>Видеокарта: NVIDIA GeForce GTX 660 / AMD Radeon R9 285</li>
+          <li>Место на диске: 46+ ГБ</li>
+        </ul>
+        <h3>Рекомендуемые:</h3>
+        <ul>
+          <li>ОС: Windows 10</li>
+          <li>Процессор: Intel Core i7 3770 / AMD FX 8350</li>
+          <li>Оперативная память: 8 ГБ</li>
+          <li>Видеокарта: NVIDIA GeForce GTX 970 / AMD Radeon R9 290</li>
+          <li>Место на диске: 46+ ГБ</li>
+        </ul>
+      </section>
+
+      <section id="trailer">
+        <h2>Трейлер</h2>
+        <iframe width="100%" height="480" src="https://www.youtube.com/embed/s_SJZSAtLBA" frameborder="0" allowfullscreen></iframe>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Сайт о Assassin's Creed Odyssey. Все права защищены.</p>
+  </footer>
+
+  <script>
+    function showImage(imgElement) {
+      const mainImg = document.getElementById('mainDisplay');
+      mainImg.src = imgElement.src;
+    }
+  </script>
+</body>
+</html>
